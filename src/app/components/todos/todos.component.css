@@ -1,0 +1,78 @@
+.todos{
+    background:#fff;
+    box-shadow:0px 1px 3px #ccc;
+    display:flex;
+    flex-direction: column;
+
+    width: calc(90% - 100px);
+    padding: 50px;
+    margin:0 auto;
+}
+
+.todos form{
+    display: flex;
+    margin-bottom:40px;
+}
+.todo-input{
+    flex:1;
+    padding:10px;
+    border: 1px solid #111;
+}
+
+.todo{
+    padding:4px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo input[type=text]{
+    background-color: transparent;
+    border:0px;
+    border-bottom: 1px dashed #111;
+    padding:5px;
+}
+.todo div, .todo button{
+    padding:5px;
+}
+.todo .content{
+    flex:1;
+}
+.done { text-decoration:line-through; }
+
+
+button{
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+fieldset{
+    border:0px;
+}
+fieldset legend{
+    font-size: 24px;
+}
+
+
+button{
+    border: 1px solid #111;
+    padding:10px;
+    margin:0px 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.bt-create{
+    background-color: #2196f3;
+    color:#fff;
+}
+.bt-update{
+    background-color: #4caf50;
+    color:#fff;
+}
+.bt-delete{
+    background-color: #f44336;
+    color:#fff;
+}

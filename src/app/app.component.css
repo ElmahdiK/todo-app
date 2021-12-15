@@ -1,0 +1,14 @@
+body{
+    background:#fafafa;
+}
+
+nav{
+    display: flex;
+}
+nav a{
+    border:1px solid #111;
+    padding: 10px;
+    text-decoration: none;
+    margin:10px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,23 @@
+<div class="todos">
+
+    <fieldset>
+        <legend>Liste des tâches</legend>
+
+        <form (ngSubmit)="addTodo()">
+            <input type="text" name="inputTodo" placeholder="Nouvelle tâche" class="todo-input"
+                [(ngModel)]="inputTodo" />
+            <button type="submit" class="bt-create">Créer</button>
+        </form>
+
+
+        <div *ngFor="let todo of todos; let i=index;" class="todo">
+            <input type="checkbox" #todoIsDone [checked]="todo.todo_is_done==1">
+            <div class="date">{{ setDateFormat(todo.todo_date) }}</div>
+            <input type="text" #todoLabel class="content" title="{{ todo.todo_id }}" value="{{ todo.todo_label }}" />
+
+            <button class="bt-update" (click)="updateTodo(i,todoLabel.value,todoIsDone.checked)">Sauvegarder</button>
+            <button class="bt-delete" (click)="deleteTodo(i)">Supprimer</button>
+        </div>
+
+    </fieldset>
+</div>
